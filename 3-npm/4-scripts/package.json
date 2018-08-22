@@ -1,0 +1,19 @@
+{
+  "name": "4-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "check": "eslint server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.4.0",
+    "express": "^4.16.3",
+    "jest": "^23.4.0"
+  }
+}

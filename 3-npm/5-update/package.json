@@ -1,0 +1,8 @@
+{
+  "name": "5-update",
+  "version": "1.0.0",
+  "dependencies": {
+    "lodash": "4.16.2",
+    "request": "2.85.0"
+  }
+}
