@@ -15,9 +15,10 @@ fetch('https://www.javascript.com/')
   .then(data => {
     console.log(data.length);
   });
+  // you have to wrap the fetch function using async function
+  // and call it at the end
+(async function read() {
+  const data = await fetch('https://www.javascript.com/');
 
-  (async function read() {
-    const data = await fetch('https://www.javascript.com/');
-
-    console.log(data.length);
-  })();
+  console.log(data.length);
+})();
