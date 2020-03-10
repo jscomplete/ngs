@@ -1,6 +1,8 @@
 const { spawn } = require('child_process');
 
 // Print Working Directory
+// call the spawn with a string
+// pipe it to the stdout
 const pwd = spawn('pwd');
 pwd.stdout.pipe(process.stdout);
 
