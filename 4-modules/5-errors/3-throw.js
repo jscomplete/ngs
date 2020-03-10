@@ -9,10 +9,31 @@ files.forEach(file => {
     const data = fs.readFileSync(filePath);
     console.log('File data is', data);
   } catch (err) {
+    // if the error is a file not found then do this
     if (err.code === 'ENOENT') {
       console.log('File not found');
     } else {
+      // make node stop because this is a problem
       throw err;
     }
   }
 });
+
+// import { resolve } from 'path';
+// import { readFileSync } from 'fs';
+
+// const files = ['.bash_profile', 'kjkjhh', '.npmrc'];
+
+// files.forEach(file => {
+//   try {
+//     const filePath = resolve(process.env.HOME, file);
+//     const data = readFileSync(filePath);
+//     console.log('File data is', data);
+//   } catch (err) {
+//     if (err.code === 'ENOENT') {
+//       console.log('File not found');
+//     } else {
+//       throw err;
+//     }
+//   }
+// });

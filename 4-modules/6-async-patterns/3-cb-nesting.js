@@ -1,3 +1,5 @@
+// also known as callback hell or the pyramid of doom
+
 const fs = require('fs');
 
 fs.readFile(__filename, function cb1(err, data) {
