@@ -2,7 +2,7 @@
   "name": "5-update",
   "version": "1.0.0",
   "dependencies": {
-    "lodash": "4.16.2",
+    "lodash": "4.17.19",
     "request": "2.85.0"
   }
 }
